@@ -1,0 +1,42 @@
+Cliente:
+- nome
+- telefone
+- email
+- senha
+
+Agenda:
+- cliente_id
+- servico_id
+- horario_inicio
+- avaliacao
+- estado
+
+Servico:
+- barbeiro_id
+- nome
+- descricao
+- preco
+- duracao
+
+Barbeiro:
+- barbearia_id
+- nome
+- expediente: {
+    inicio,
+    fim
+}
+- foto
+- descricao
+
+Barbearia:
+- franquia_id
+- endereco // receber cep e transformar em endereco através da API viacep com middleware
+- nome
+
+Franquia:
+- usuario_id
+- nome
+
+Usuario:
+- email
+- senha
