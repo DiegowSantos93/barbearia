@@ -7,10 +7,10 @@ const store = body => {
 
     if(novo){
         db.push(novo);
-
+        
         return 201;
     }
-
+    
     return 400;
 }
 
@@ -21,7 +21,7 @@ const update = (body, id) => {
 
     const novo = model(body, parseInt(id));
 
-    if(index != -1 && db != "" && novo) { // pode dar erro no db ""
+    if(index != -1 && db != "" && novo) {
         db[index] = novo;
         return 200;
     }
